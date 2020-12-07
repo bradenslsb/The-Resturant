@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu for resturant!</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div id="welcome">
+        <h2>Braden's Resturant!</h2>
+        <p>This is a high end coding resturant<br>
+            whenever you are ready you may hit<br> 
+            our menu button to see our menu. <br>
+            You my choose one of each of the menu items!
+        </p>
+    </div>
+    <input type="button" class="button" id="btMenu" value="Menu">
+    <div id="bodyboi">    
+
+        <div class="appitizer">
+            <h2>Appitizers</h2>
+            <ul id="liStarter">
+                <li>
+                    <h5>Blooming Onion</h5>
+                    <input type="button" class="menu_button" id="btapp1"value="">
+                </li>
+                <li>
+                    <h5>Fried Pickles</h5>
+                    <input type="button" class="menu_button" id="btapp2"value="">
+                </li>
+                <li>
+                    <h5>Caesar Salad</h5>
+                    <input type="button" class="menu_button" id="btapp3"value="">
+                </li>
+            </ul>
+        </div>
+        <div class="main_meal">
+            <h2>Main Meal</h2>
+            <ul id="liMain">
+                <li>
+                    <h5>Hamburger</h5>
+                    <input type="button" class="menu_button" id="btmain1"value="">
+                </li>
+                <li>
+                    <h5>Saloman</h5>
+                    <input type="button" class="menu_button" id="btmain2"value="">
+                </li>
+                <li>
+                    <h5>Steak</h5>
+                    <input type="button" class="menu_button" id="btmain3"value="">
+                </li>
+            </ul>
+        </div>
+        <div class="dessert">
+            <h2>Desserts</h2>
+            <ul id="liDessert">
+                <li>
+                    <h5>Ice Cream</h5>
+                    <input type="button" class="menu_button" id="btdes1"value="">
+                </li>
+                <li>
+                    <h5>Pie</h5>
+                    <input type="button" class="menu_button" id="btdes2"value="">
+                </li>
+                <li>
+                    <h5>Cake</h5>
+                    <input type="button" class="menu_button" id="btdes3"value="">
+                </li>
+            </ul>
+        </div>
+        <table class="table">
+            <th>Your Order:</th>
+            <tr>
+              <td>Starter :</td>
+              <td id="selectedStarter"></td>
+            </tr>
+            <tr>
+              <td>Main :</td>
+              <td id="selectedMain"></td>
+            </tr>
+            <tr>
+              <td>Dessert :</td>
+              <td id="selectedDessert"></td>
+            </tr>
+            <tr>
+              <td>Total :</td>
+              <td id="total"></td>
+            </tr>
+        </table>
+    </div>    
+</body>
+<script src="app.js" type="text/javascript"></script>
+</html>
